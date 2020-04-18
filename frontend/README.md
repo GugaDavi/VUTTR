@@ -1,44 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# VUTTR (Very Useful Tools to Remember)
 
-## Available Scripts
+## Installation step by step:
 
-In the project directory, you can run:
+Clone this repository through the command line:
 
-### `yarn start`
+git clone https://github.com/GugaDavi/VUTTR - **Pre-installed git required**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Or download and extract the files.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Accessing the project folder:
 
-### `yarn test`
+1. Enter the folder **backend**;
+2. Run: `yarn dev` ou `npm run dev`;
+3. Return to the project root and access the folder **frontend**
+4. Run: `yarn start` ou `npm run start`;
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usability:
 
-### `yarn build`
+The application consists of a single page on which it is possible:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- List the tools registered on the server;
+- Add a new tool;
+- Delete a tool;
+- Search by name or tags related to the tool;
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Screnshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img width="1440" alt="Screen Shot 2020-04-17 at 21 34 05" src="https://user-images.githubusercontent.com/46768454/79623864-d3158580-80f4-11ea-86aa-eeb88cec68b4.png">
+<img width="1440" alt="Screen Shot 2020-04-17 at 21 34 20" src="https://user-images.githubusercontent.com/46768454/79623863-d1e45880-80f4-11ea-804f-df1e484e61da.png">
+<img width="1440" alt="Screen Shot 2020-04-17 at 21 34 31" src="https://user-images.githubusercontent.com/46768454/79623856-cdb83b00-80f4-11ea-8e62-616a4c02b335.png">
+<img width="1440" alt="Screen Shot 2020-04-17 at 21 47 05" src="https://user-images.githubusercontent.com/46768454/79623938-1cfe6b80-80f5-11ea-989e-215c620526d6.png">
+<img width="1440" alt="Screen Shot 2020-04-17 at 21 47 20" src="https://user-images.githubusercontent.com/46768454/79623937-1c65d500-80f5-11ea-8d3b-29c026ead9d4.png">
+<img width="1440" alt="Screen Shot 2020-04-17 at 21 47 35" src="https://user-images.githubusercontent.com/46768454/79623935-18d24e00-80f5-11ea-8607-7931373573f8.png">
