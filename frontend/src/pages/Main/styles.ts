@@ -111,9 +111,12 @@ export const ToolsList = styled.div`
         display: flex;
         justify-content: space-between;
 
-        h5 {
+        a {
           text-decoration: underline;
           color: ${Pallete.primaryDarkColor};
+          letter-spacing: 0.48px;
+          font-size: 24px;
+          font-weight: bold;
         }
 
         svg {

@@ -117,7 +117,9 @@ const Main: React.FC<Props> = ({ toolRepository }) => {
           {tools.map((tool) => (
             <li key={String(tool.id)}>
               <header>
-                <h5 className="title">{tool.title}</h5>
+                <a href={tool.link} className="title" target="_blanck">
+                  {tool.title}
+                </a>
                 <button
                   className="deleteButton"
                   onClick={() => {
