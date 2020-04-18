@@ -87,71 +87,81 @@ export const Container = styled.div`
   }
 `;
 
-export const ToolsList = styled.ul`
-  > li {
-    box-shadow: 0px 10px 10px #0000000d;
-    background-color: ${Pallete.white};
-    border: 1px solid ${Pallete.borderColor};
-    border-radius: 5px;
-    padding: 15px;
+export const ToolsList = styled.div`
+  height: 500px;
+  overflow: scroll;
 
-    & + li {
-      margin-top: 15px;
-    }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
-    > header {
-      display: flex;
-      justify-content: space-between;
+  > ul {
+    > li {
+      box-shadow: 0px 10px 10px #0000000d;
+      background-color: ${Pallete.white};
+      border: 1px solid ${Pallete.borderColor};
+      border-radius: 5px;
+      padding: 15px;
 
-      h5 {
-        text-decoration: underline;
-        color: ${Pallete.primaryDarkColor};
+      & + li {
+        margin-top: 15px;
       }
 
-      svg {
-        color: ${Pallete.buttonQuartiaryDanger.Click};
-      }
-
-      button.deleteButton {
+      > header {
         display: flex;
-        align-items: center;
-        height: 30px;
-        text-align: center;
-        padding-top: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-        padding-left: 0;
+        justify-content: space-between;
 
-        &:hover span {
-          color: ${Pallete.buttonQuartiaryDanger.Hover};
+        h5 {
+          text-decoration: underline;
+          color: ${Pallete.primaryDarkColor};
         }
 
-        &:active span {
+        svg {
           color: ${Pallete.buttonQuartiaryDanger.Click};
         }
 
-        span {
-          margin-left: 5px;
-          color: ${Pallete.buttonQuartiaryDanger.Regular};
+        button.deleteButton {
+          display: flex;
+          align-items: center;
+          height: 30px;
+          text-align: center;
+          padding-top: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+          padding-left: 0;
+
+          &:hover span {
+            color: ${Pallete.buttonQuartiaryDanger.Hover};
+          }
+
+          &:active span {
+            color: ${Pallete.buttonQuartiaryDanger.Click};
+          }
+
+          span {
+            margin-left: 5px;
+            margin-bottom: 2.5px;
+            color: ${Pallete.buttonQuartiaryDanger.Regular};
+          }
         }
       }
-    }
 
-    > p {
-      max-lines: 2;
-      margin-bottom: 15px;
-    }
+      > p {
+        max-lines: 2;
+        margin-bottom: 15px;
+      }
 
-    > ul {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 100%;
+      > ul {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
 
-      li {
-        font-weight: bold;
+        li {
+          font-weight: bold;
 
-        & + li {
-          margin-left: 5px;
+          & + li {
+            margin-left: 5px;
+          }
         }
       }
     }

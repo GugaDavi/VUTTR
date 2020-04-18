@@ -113,31 +113,33 @@ const Main: React.FC<Props> = ({ toolRepository }) => {
       </header>
 
       <ToolsList>
-        {tools.map((tool) => (
-          <li key={String(tool.id)}>
-            <header>
-              <h5 className="title">{tool.title}</h5>
-              <button
-                className="deleteButton"
-                onClick={() => {
-                  setSelectedToolToDelete(tool);
-                  setDeleteConfirmation(!deleteConfimation);
-                }}
-              >
-                <FiX />
-                <span>remove</span>
-              </button>
-            </header>
+        <ul>
+          {tools.map((tool) => (
+            <li key={String(tool.id)}>
+              <header>
+                <h5 className="title">{tool.title}</h5>
+                <button
+                  className="deleteButton"
+                  onClick={() => {
+                    setSelectedToolToDelete(tool);
+                    setDeleteConfirmation(!deleteConfimation);
+                  }}
+                >
+                  <FiX />
+                  <span>remove</span>
+                </button>
+              </header>
 
-            <p>{tool.description}</p>
+              <p>{tool.description}</p>
 
-            <ul>
-              {tool.tags.map((tool) => (
-                <li key={tool}>#{tool}</li>
-              ))}
-            </ul>
-          </li>
-        ))}
+              <ul>
+                {tool.tags.map((tool) => (
+                  <li key={tool}>#{tool}</li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
       </ToolsList>
       {openNewToolForm && (
         <NewToolForm
